@@ -112,7 +112,7 @@ model.summary()
 model.compile(Adam(lr=0.001),loss='categorical_crossentropy',metrics=['accuracy'])
 
 from keras.callbacks import EarlyStopping, ModelCheckpoint
-checkpoint = ModelCheckpoint('/kaggle/working/xception_best.h5', verbose=1, monitor='val_accuracy',save_best_only=True, mode='max')
+checkpoint = ModelCheckpoint('results/xception_best.h5', verbose=1, monitor='val_accuracy',save_best_only=True, mode='max')
 his = model.fit(train_batches,steps_per_epoch=np.ceil(train_batches.samples / train_batches.batch_size),epochs =30 ,verbose=1,validation_data = val_batches,validation_steps=np.ceil(val_batches.samples / val_batches.batch_size),callbacks=[checkpoint,tf.keras.callbacks.EarlyStopping(monitor='val_accuracy', patience=5)])
 
 #generate training curve
@@ -151,8 +151,8 @@ plt.xlabel('Epochs', fontsize='medium')
 plt.ylabel('Accuracy', fontsize='medium')
 plt.legend()
 #sn.set(font_scale=1)
-plt.savefig('train.pdf', format='pdf', dpi=300)
-plt.savefig('train.png', format='png', dpi=300)
+plt.savefig('results/train.pdf', format='pdf', dpi=300)
+plt.savefig('results/train.png', format='png', dpi=300)
 plt.show()
 
 # Commented out IPython magic to ensure Python compatibility.
@@ -175,7 +175,7 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 
 #Change HERE
-model = load_model('./xception_best.h5')
+model = load_model('results/xception_best.h5')
 
 
 loss, acc = model.evaluate_generator(test_batches, steps=np.ceil(test_batches.samples / test_batches.batch_size), verbose=1)
@@ -231,8 +231,8 @@ df_cm = pd.DataFrame(data, columns=np.unique(y_true), index = np.unique(y_true))
 #df_cm.columns.name = 'Predicted'
 sn.set(font_scale=2)#for label size
 sn.heatmap(df_cm, cmap="Blues", annot=True,annot_kws={"size": 24}, fmt="d")
-plt.savefig('Cm_test.pdf', format='pdf', dpi=300)
-plt.savefig('Cm_test.png', format='png', dpi=300)
+plt.savefig('results/Cm_test.pdf', format='pdf', dpi=300)
+plt.savefig('results/Cm_test.png', format='png', dpi=300)
 
 # Commented out IPython magic to ensure Python compatibility.
 #generate Result
@@ -254,7 +254,7 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 
 #Change HERE
-model = load_model('./xception_best.h5')
+model = load_model('results/xception_best.h5')
 
 
 loss, acc = model.evaluate_generator(val_batches, steps=np.ceil(val_batches.samples / val_batches.batch_size), verbose=1)
@@ -310,5 +310,5 @@ df_cm = pd.DataFrame(data, columns=np.unique(y_true), index = np.unique(y_true))
 #df_cm.columns.name = 'Predicted'
 sn.set(font_scale=2)#for label size
 sn.heatmap(df_cm, cmap="Blues", annot=True,annot_kws={"size": 24}, fmt="d")
-plt.savefig('Cm_val.pdf', format='pdf', dpi=300)
-plt.savefig('Cm_val.png', format='png', dpi=300)
+plt.savefig('results/Cm_val.pdf', format='pdf', dpi=300)
+plt.savefig('results/Cm_val.png', format='png', dpi=300)
