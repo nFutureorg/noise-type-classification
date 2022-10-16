@@ -42,7 +42,7 @@ if __name__ == "__main__":
             #resized = cv2.resize(crop_img_noisy, dim, interpolation = cv2.INTER_CUBIC)
             cv2.imwrite(outfolder + '/' + file_name, resized_noisy_img)
             
-        if im_type == 'jpg' and clean_destination == 'poisson':
+        elif im_type == 'jpg' and clean_destination == 'poisson':
             file_name =  mask_file_list[v]
             img = cv2.imread(folder + '/' + file_name)
             crop_img_clean = img[y:y+h, x:x+w] #Crop images
@@ -59,7 +59,7 @@ if __name__ == "__main__":
             # resize image
             #resized = cv2.resize(crop_img_noisy, dim, interpolation = cv2.INTER_CUBIC)
             cv2.imwrite(outfolder + '/' + file_name, resized_noisy_img)
-        if im_type == 'jpg' and clean_destination == 'hybrid':
+        elif im_type == 'jpg' and clean_destination == 'hybrid':
             file_name =  mask_file_list[v]
             img = cv2.imread(folder + '/' + file_name)
             crop_img_clean = img[y:y+h, x:x+w] #Crop images
