@@ -22,7 +22,7 @@ if __name__ == "__main__":
     mask_file_list = [f for f in os.listdir(folder+'/')]
     outfolder = noisy_destination+'/'+str(clean_destination)#+''/'#+str(sigma)
     Path(outfolder).mkdir(exist_ok=True)
-    Path(clean_destination).mkdir(exist_ok=True)
+    #Path(clean_destination).mkdir(exist_ok=True)
     for v in range(len(mask_file_list)):
         if im_type == 'jpg' and clean_destination == 'gaussian':
             file_name =  mask_file_list[v]
