@@ -26,6 +26,7 @@ if __name__ == "__main__":
     for v in range(len(mask_file_list)):
         if im_type == 'jpg' and clean_destination == 'gaussian':
             file_name =  mask_file_list[v]
+            #os.rename(file_name, file_name)
             img = cv2.imread(folder + '/' + file_name)
             crop_img_clean = img[y:y+h, x:x+w] #Crop images
               
@@ -40,7 +41,8 @@ if __name__ == "__main__":
             #crop_img_noisy = img[y:y+h, x:x+w] 
             # resize image
             #resized = cv2.resize(crop_img_noisy, dim, interpolation = cv2.INTER_CUBIC)
-            cv2.imwrite(outfolder + '/' + file_name, resized_noisy_img)
+
+            cv2.imwrite(outfolder + '/' + os.path.splitext(file_name)[0]+'_'+str(sigma)+'.jpg', resized_noisy_img)
             
         elif im_type == 'jpg' and clean_destination == 'poisson':
             file_name =  mask_file_list[v]
@@ -58,7 +60,7 @@ if __name__ == "__main__":
             #crop_img_noisy = img[y:y+h, x:x+w] 
             # resize image
             #resized = cv2.resize(crop_img_noisy, dim, interpolation = cv2.INTER_CUBIC)
-            cv2.imwrite(outfolder + '/' + file_name, resized_noisy_img)
+            cv2.imwrite(outfolder + '/' + os.path.splitext(file_name)[0]+'_'+str(sigma)+'.jpg', resized_noisy_img)
         elif im_type == 'jpg' and clean_destination == 'hybrid':
             file_name =  mask_file_list[v]
             img = cv2.imread(folder + '/' + file_name)
@@ -77,6 +79,6 @@ if __name__ == "__main__":
             #crop_img_noisy = img[y:y+h, x:x+w] 
             # resize image
             #resized = cv2.resize(crop_img_noisy, dim, interpolation = cv2.INTER_CUBIC)
-            cv2.imwrite(outfolder + '/' + file_name, resized_noisy_img)
+            cv2.imwrite(outfolder + '/' + os.path.splitext(file_name)[0]+'_'+str(sigma)+'.jpg', resized_noisy_img)
         else:
             print("Error type")
