@@ -6,7 +6,7 @@ from pathlib import Path
 from photutils.datasets import make_noise_image
 
 if __name__ == "__main__":
-    
+
     folder = sys.argv[1]
     sigma = int(sys.argv[2])
     im_type =  str(sys.argv[3])
@@ -29,7 +29,7 @@ if __name__ == "__main__":
             #os.rename(file_name, file_name)
             img = cv2.imread(folder + '/' + file_name)
             crop_img_clean = img[y:y+h, x:x+w] #Crop images
-              
+
             # resize image
             resized = cv2.resize(crop_img_clean, dim, interpolation = cv2.INTER_CUBIC)
 
@@ -38,17 +38,17 @@ if __name__ == "__main__":
                                    mean=0, stddev=sigma)
             #noise = np.random.normal(0, sigma, resized.shape)
             resized_noisy_img = resized + noise
-            #crop_img_noisy = img[y:y+h, x:x+w] 
+            #crop_img_noisy = img[y:y+h, x:x+w]
             # resize image
             #resized = cv2.resize(crop_img_noisy, dim, interpolation = cv2.INTER_CUBIC)
 
             cv2.imwrite(outfolder + '/' + os.path.splitext(file_name)[0]+'_'+str(sigma)+'.jpg', resized_noisy_img)
-            
+
         elif im_type == 'jpg' and clean_destination == 'poisson':
             file_name =  mask_file_list[v]
             img = cv2.imread(folder + '/' + file_name)
             crop_img_clean = img[y:y+h, x:x+w] #Crop images
-              
+
             # resize image
             resized = cv2.resize(crop_img_clean, dim, interpolation = cv2.INTER_CUBIC)
             noise = make_noise_image(resized.shape, distribution='poisson',
@@ -57,7 +57,7 @@ if __name__ == "__main__":
 
             #noise = np.random.normal(0, sigma, resized.shape)
             resized_noisy_img = resized + noise
-            #crop_img_noisy = img[y:y+h, x:x+w] 
+            #crop_img_noisy = img[y:y+h, x:x+w]
             # resize image
             #resized = cv2.resize(crop_img_noisy, dim, interpolation = cv2.INTER_CUBIC)
             cv2.imwrite(outfolder + '/' + os.path.splitext(file_name)[0]+'_'+str(sigma)+'.jpg', resized_noisy_img)
@@ -65,7 +65,7 @@ if __name__ == "__main__":
             file_name =  mask_file_list[v]
             img = cv2.imread(folder + '/' + file_name)
             crop_img_clean = img[y:y+h, x:x+w] #Crop images
-              
+
             # resize image
             resized = cv2.resize(crop_img_clean, dim, interpolation = cv2.INTER_CUBIC)
             noise1 = make_noise_image(resized.shape, distribution='gaussian',
@@ -76,9 +76,11 @@ if __name__ == "__main__":
 
             #noise = np.random.normal(0, sigma, resized.shape)
             resized_noisy_img = resized + noise1 +noise2
-            #crop_img_noisy = img[y:y+h, x:x+w] 
+            #crop_img_noisy = img[y:y+h, x:x+w]
             # resize image
             #resized = cv2.resize(crop_img_noisy, dim, interpolation = cv2.INTER_CUBIC)
             cv2.imwrite(outfolder + '/' + os.path.splitext(file_name)[0]+'_'+str(sigma)+'.jpg', resized_noisy_img)
         else:
             print("Error type")
+
+    return mean, sigma, residu
