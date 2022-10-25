@@ -12,7 +12,7 @@ if __name__ == "__main__":
     mean = int(sys.argv[3])
     im_type =  str(sys.argv[4])
     noise_type = sys.argv[5]
-    noisy_destination = sys.argv[5]
+    noisy_destination = sys.argv[6]
     y=0
     x=0
     h=600
