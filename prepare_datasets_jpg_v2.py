@@ -24,12 +24,9 @@ if __name__ == "__main__":
     outfolder = noisy_destination+'/'+str(noise_type)#+''/'#+str(sigma)
     Path(outfolder).mkdir(exist_ok=True)
     #Path(clean_destination).mkdir(exist_ok=True)
-    #for v in range(len(mask_file_list)):
-    select_random = random.choices(mask_file_list, k=10)
-    for v in select_random:
+    for v in range(len(mask_file_list)):
         if im_type == 'jpg' and noise_type == 'gaussian':
-            #file_name =  mask_file_list[v]
-            file_name = v
+            file_name =  mask_file_list[v]
             #os.rename(file_name, file_name)
             img = cv2.imread(folder + '/' + file_name)
             crop_img_clean = img[y:y+h, x:x+w] #Crop images
@@ -49,8 +46,7 @@ if __name__ == "__main__":
             cv2.imwrite(outfolder + '/' + os.path.splitext(file_name)[0]+'_'+str(sigma)+'.jpg', resized_noisy_img)
             
         elif im_type == 'jpg' and noise_type == 'poisson':
-            #file_name =  mask_file_list[v]
-            file_name = v
+            file_name =  mask_file_list[v]
             img = cv2.imread(folder + '/' + file_name)
             crop_img_clean = img[y:y+h, x:x+w] #Crop images
               
@@ -67,8 +63,7 @@ if __name__ == "__main__":
             #resized = cv2.resize(crop_img_noisy, dim, interpolation = cv2.INTER_CUBIC)
             cv2.imwrite(outfolder + '/' + os.path.splitext(file_name)[0]+'_'+str(sigma)+'.jpg', resized_noisy_img)
         elif im_type == 'jpg' and noise_type == 'hybrid':
-            #file_name =  mask_file_list[v]
-            file_name = v
+            file_name =  mask_file_list[v]
             img = cv2.imread(folder + '/' + file_name)
             crop_img_clean = img[y:y+h, x:x+w] #Crop images
               
