@@ -13,6 +13,7 @@ if __name__ == "__main__":
     im_type =  str(sys.argv[4])
     noise_type = sys.argv[5]
     noisy_destination = sys.argv[6]
+    purpose = sys.argv[7]
     y=0
     x=0
     h=600
@@ -21,11 +22,15 @@ if __name__ == "__main__":
     height = 768
     dim = (width, height)
     mask_file_list = [f for f in os.listdir(folder+'/')]
-    outfolder = noisy_destination+'/'+str(noise_type)#+''/'#+str(sigma)
+    outfolder = noisy_destination+'/'+str(purpose)+'/'+str(noise_type)
     Path(outfolder).mkdir(exist_ok=True)
     #Path(clean_destination).mkdir(exist_ok=True)
     #for v in range(len(mask_file_list)):
-    select_random = random.choices(mask_file_list, k=10)
+    select_random = []
+    if purpose == 'train':
+        select_random = random.choices(mask_file_list, k=10)
+    elif purpose == 'test':
+        select_random = random.choices(mask_file_list, k=2)
     for v in select_random:
         if im_type == 'jpg' and noise_type == 'gaussian':
             #file_name =  mask_file_list[v]
@@ -66,7 +71,7 @@ if __name__ == "__main__":
             # resize image
             #resized = cv2.resize(crop_img_noisy, dim, interpolation = cv2.INTER_CUBIC)
             cv2.imwrite(outfolder + '/' + os.path.splitext(file_name)[0]+'_'+str(sigma)+'.jpg', resized_noisy_img)
-        elif im_type == 'jpg' and noise_type == 'hybrid':
+        elif im_type == 'jpg' and noise_type == 'mixed':
             #file_name =  mask_file_list[v]
             file_name = v
             img = cv2.imread(folder + '/' + file_name)
