@@ -23,7 +23,7 @@ if __name__ == "__main__":
     dim = (width, height)
     mask_file_list = [f for f in os.listdir(folder+'/')]
     outfolder = noisy_destination+'/'+str(purpose)+'/'+str(noise_type)
-    Path(outfolder).mkdir(exist_ok=True)
+    Path(outfolder).mkdir(parents=True,exist_ok=True)
     #Path(clean_destination).mkdir(exist_ok=True)
     #for v in range(len(mask_file_list)):
     select_random = []
