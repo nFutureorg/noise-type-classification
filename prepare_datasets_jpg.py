@@ -4,6 +4,7 @@ import numpy as np
 import sys
 from pathlib import Path
 from photutils.datasets import make_noise_image
+import random
 
 if __name__ == "__main__":
     
