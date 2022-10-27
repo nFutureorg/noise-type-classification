@@ -34,7 +34,6 @@ from tensorflow.keras.optimizers import Adam
 from  tensorflow.keras.metrics import categorical_crossentropy
 from tensorflow.keras.preprocessing.image import ImageDataGenerator
 from  tensorflow.keras.layers import BatchNormalization
-from  tensorflow.keras.layers.convolutional import *
 from matplotlib import pyplot as plt
 from sklearn.metrics import confusion_matrix
 import itertools
@@ -51,8 +50,7 @@ from  tensorflow.keras.layers import Input
 from  tensorflow.keras.layers import Dense, Activation, Dropout, Flatten, Conv2D, MaxPooling2D
 from  tensorflow.keras.layers import BatchNormalization
 from  tensorflow.keras.models import Sequential
-#from  tensorflow.keras.models import Sequential
-#from  tensorflow.keras.layers.core import Dense, Dropout, Activation
+
 from tensorflow.keras.optimizers import SGD
 from tensorflow.keras.callbacks import EarlyStopping, ModelCheckpoint
 import tensorflow as tf
