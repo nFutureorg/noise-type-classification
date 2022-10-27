@@ -29,7 +29,7 @@ import keras
 from tensorflow.python.keras import backend as k
 from  tensorflow.keras.models import Sequential
 from  tensorflow.keras.layers import Activation
-from  tensorflow.keras.layers.core import Dense,Flatten
+#from  tensorflow.keras.layers.core import Dense,Flatten
 from tensorflow.keras.optimizers import Adam
 from  tensorflow.keras.metrics import categorical_crossentropy
 from tensorflow.keras.preprocessing.image import ImageDataGenerator
