@@ -29,9 +29,11 @@ if __name__ == "__main__":
     #for v in range(len(mask_file_list)):
     select_random = []
     if purpose == 'train':
-        select_random = random.choices(mask_file_list, k=25)
+        select_random = random.choices(mask_file_list, k=50)
     elif purpose == 'test':
         select_random = random.choices(mask_file_list, k=8)
+    elif purpose == 'validation':
+        select_random = random.choices(mask_file_list, k=10)
     for v in select_random:
         if im_type == 'jpg' and noise_type == 'gaussian':
             #file_name =  mask_file_list[v]
