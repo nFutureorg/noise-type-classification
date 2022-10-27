@@ -73,7 +73,7 @@ if __name__ == "__main__":
             #crop_img_noisy = img[y:y+h, x:x+w] 
             # resize image
             #resized = cv2.resize(crop_img_noisy, dim, interpolation = cv2.INTER_CUBIC)
-            cv2.imwrite(outfolder + '/' + os.path.splitext(file_name)[0]+'_'+str(sigma)+'.jpg', resized_noisy_img)
+            cv2.imwrite(outfolder + '/' + os.path.splitext(file_name)[0]+'_'+str(mean)+'.jpg', resized_noisy_img)
         elif im_type == 'jpg' and noise_type == 'mixed':
             #file_name =  mask_file_list[v]
             file_name = v
