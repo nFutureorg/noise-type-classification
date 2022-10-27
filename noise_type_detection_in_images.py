@@ -52,7 +52,7 @@ from  tensorflow.keras.layers import Dense, Activation, Dropout, Flatten, Conv2D
 from  tensorflow.keras.layers import BatchNormalization
 from  tensorflow.keras.models import Sequential
 #from  tensorflow.keras.models import Sequential
-from  tensorflow.keras.layers.core import Dense, Dropout, Activation
+#from  tensorflow.keras.layers.core import Dense, Dropout, Activation
 from tensorflow.keras.optimizers import SGD
 from tensorflow.keras.callbacks import EarlyStopping, ModelCheckpoint
 import tensorflow as tf
