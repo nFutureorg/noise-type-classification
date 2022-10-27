@@ -8,6 +8,22 @@ Original file is located at
 """
 
 # Commented out IPython magic to ensure Python compatibility.
+from __future__ import print_function
+import sklearn
+from matplotlib import pyplot as plt 
+from sklearn.metrics import classification_report
+from sklearn.model_selection import train_test_split
+from sklearn.svm import SVC
+from sklearn.ensemble import RandomForestClassifier
+from sklearn.metrics import confusion_matrix
+from sklearn.linear_model import LogisticRegression
+import numpy as np
+import h5py
+import os
+import json
+import pickle
+import seaborn as sns
+import matplotlib.pyplot as plt
 import numpy as np
 import keras
 from keras import backend as k
@@ -156,22 +172,7 @@ plt.savefig('results/train.png', format='png', dpi=300)
 
 # Commented out IPython magic to ensure Python compatibility.
 #generate Result
-from __future__ import print_function
-import sklearn
-from matplotlib import pyplot as plt 
-from sklearn.metrics import classification_report
-from sklearn.model_selection import train_test_split
-from sklearn.svm import SVC
-from sklearn.ensemble import RandomForestClassifier
-from sklearn.metrics import confusion_matrix
-from sklearn.linear_model import LogisticRegression
-import numpy as np
-import h5py
-import os
-import json
-import pickle
-import seaborn as sns
-import matplotlib.pyplot as plt
+
 
 #Change HERE
 model = load_model('results/xception_best.h5')
@@ -218,22 +219,7 @@ plt.savefig('results/Cm_test.png', format='png', dpi=300)
 
 # Commented out IPython magic to ensure Python compatibility.
 #generate Result
-from __future__ import print_function
-import sklearn
-from matplotlib import pyplot as plt 
-from sklearn.metrics import classification_report
-from sklearn.model_selection import train_test_split
-from sklearn.svm import SVC
-from sklearn.ensemble import RandomForestClassifier
-from sklearn.metrics import confusion_matrix
-from sklearn.linear_model import LogisticRegression
-import numpy as np
-import h5py
-import os
-import json
-import pickle
-import seaborn as sns
-import matplotlib.pyplot as plt
+
 
 #Change HERE
 model = load_model('results/xception_best.h5')
