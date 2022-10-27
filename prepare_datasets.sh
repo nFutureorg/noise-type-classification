@@ -340,6 +340,201 @@ echo " Gaussian sigma 50 : completed for train and test"
 
 echo " poisson mean 50 : Starting ......"
 
+python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Biological 0 10 'jpg' 'poisson' datasets 'train'
+
+python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Particles 0 10 'jpg' 'poisson' datasets 'train'
+
+python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Patterned_surface 0 10 'jpg' 'poisson' datasets 'train'
+
+python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Fibres 0 10 'jpg' 'poisson' datasets 'train'
+
+python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Films_Coated_Surface 0 10 'jpg' 'poisson' datasets 'train'
+
+python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Porous_Sponge 0 10 'jpg' 'poisson' datasets 'train'
+
+python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/MEMS_devices_and_electrodes 0 10 'jpg' 'poisson' datasets 'train'
+
+python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Powder 0 10 'jpg' 'poisson' datasets 'train'
+
+python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Nanowires 0 10 'jpg' 'poisson' datasets 'train'
+
+python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Tips 0 10 'jpg' 'poisson' datasets 'train'
+
+echo " poisson mean 50 : For test ......"
+
+python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Biological 0 10 'jpg' 'poisson' datasets 'test'
+
+python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Particles 0 10 'jpg' 'poisson' datasets 'test'
+
+python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Patterned_surface 0 10 'jpg' 'poisson' datasets 'test'
+
+python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Fibres 0 10 'jpg' 'poisson' datasets 'test'
+
+python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Films_Coated_Surface 0 10 'jpg' 'poisson' datasets 'test'
+
+python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Porous_Sponge 0 10 'jpg' 'poisson' datasets 'test'
+
+python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/MEMS_devices_and_electrodes 0 10 'jpg' 'poisson' datasets 'test'
+
+python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Powder 0 10 'jpg' 'poisson' datasets 'test'
+
+python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Nanowires 0 10 'jpg' 'poisson' datasets 'test'
+
+python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Tips 0 10 'jpg' 'poisson' datasets 'test'
+
+
+echo " poisson mean 50 : completed for train and test"
+
+
+echo " poisson mean 100 : Starting ......"
+
+python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Biological 0 20 'jpg' 'poisson' datasets 'train'
+
+python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Particles 0 20 'jpg' 'poisson' datasets 'train'
+
+python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Patterned_surface 0 20 'jpg' 'poisson' datasets 'train'
+
+python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Fibres 0 20 'jpg' 'poisson' datasets 'train'
+
+python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Films_Coated_Surface 0 20 'jpg' 'poisson' datasets 'train'
+
+python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Porous_Sponge 0 20 'jpg' 'poisson' datasets 'train'
+
+python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/MEMS_devices_and_electrodes 0 20 'jpg' 'poisson' datasets 'train'
+
+python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Powder 0 20 'jpg' 'poisson' datasets 'train'
+
+python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Nanowires 0 20 'jpg' 'poisson' datasets 'train'
+
+python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Tips 0 20 'jpg' 'poisson' datasets 'train'
+
+echo " poisson mean 100 : For test ......"
+
+python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Biological 0 20 'jpg' 'poisson' datasets 'test'
+
+python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Particles 0 20 'jpg' 'poisson' datasets 'test'
+
+python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Patterned_surface 0 20 'jpg' 'poisson' datasets 'test'
+
+python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Fibres 0 20 'jpg' 'poisson' datasets 'test'
+
+python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Films_Coated_Surface 0 20 'jpg' 'poisson' datasets 'test'
+
+python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Porous_Sponge 0 20 'jpg' 'poisson' datasets 'test'
+
+python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/MEMS_devices_and_electrodes 0 20 'jpg' 'poisson' datasets 'test'
+
+python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Powder 0 20 'jpg' 'poisson' datasets 'test'
+
+python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Nanowires 0 20 'jpg' 'poisson' datasets 'test'
+
+python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Tips 0 20 'jpg' 'poisson' datasets 'test'
+
+
+echo " poisson mean 100 : completed for train and test"
+
+
+echo " poisson mean 125 : Starting ......"
+
+python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Biological 0 30 'jpg' 'poisson' datasets 'train'
+
+python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Particles 0 30 'jpg' 'poisson' datasets 'train'
+
+python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Patterned_surface 0 30 'jpg' 'poisson' datasets 'train'
+
+python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Fibres 0 30 'jpg' 'poisson' datasets 'train'
+
+python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Films_Coated_Surface 0 30 'jpg' 'poisson' datasets 'train'
+
+python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Porous_Sponge 0 30 'jpg' 'poisson' datasets 'train'
+
+python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/MEMS_devices_and_electrodes 0 30 'jpg' 'poisson' datasets 'train'
+
+python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Powder 0 30 'jpg' 'poisson' datasets 'train'
+
+python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Nanowires 0 30 'jpg' 'poisson' datasets 'train'
+
+python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Tips 0 30 'jpg' 'poisson' datasets 'train'
+
+echo " poisson mean 125 : For test ......"
+
+python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Biological 0 30 'jpg' 'poisson' datasets 'test'
+
+python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Particles 0 30 'jpg' 'poisson' datasets 'test'
+
+python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Patterned_surface 0 30 'jpg' 'poisson' datasets 'test'
+
+python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Fibres 0 30 'jpg' 'poisson' datasets 'test'
+
+python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Films_Coated_Surface 0 30 'jpg' 'poisson' datasets 'test'
+
+python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Porous_Sponge 0 30 'jpg' 'poisson' datasets 'test'
+
+python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/MEMS_devices_and_electrodes 0 30 'jpg' 'poisson' datasets 'test'
+
+python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Powder 0 30 'jpg' 'poisson' datasets 'test'
+
+python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Nanowires 0 30 'jpg' 'poisson' datasets 'test'
+
+python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Tips 0 30 'jpg' 'poisson' datasets 'test'
+
+
+echo " poisson mean 125 : completed for train and test"
+
+
+
+echo " poisson mean 150 : Starting ......"
+
+python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Biological 0 40 'jpg' 'poisson' datasets 'train'
+
+python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Particles 0 40 'jpg' 'poisson' datasets 'train'
+
+python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Patterned_surface 0 40 'jpg' 'poisson' datasets 'train'
+
+python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Fibres 0 40 'jpg' 'poisson' datasets 'train'
+
+python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Films_Coated_Surface 0 40 'jpg' 'poisson' datasets 'train'
+
+python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Porous_Sponge 0 40 'jpg' 'poisson' datasets 'train'
+
+python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/MEMS_devices_and_electrodes 0 40 'jpg' 'poisson' datasets 'train'
+
+python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Powder 0 40 'jpg' 'poisson' datasets 'train'
+
+python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Nanowires 0 40 'jpg' 'poisson' datasets 'train'
+
+python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Tips 0 40 'jpg' 'poisson' datasets 'train'
+
+echo " poisson mean 150 : For test ......"
+
+python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Biological 0 40 'jpg' 'poisson' datasets 'test'
+
+python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Particles 0 40 'jpg' 'poisson' datasets 'test'
+
+python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Patterned_surface 0 40 'jpg' 'poisson' datasets 'test'
+
+python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Fibres 0 40 'jpg' 'poisson' datasets 'test'
+
+python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Films_Coated_Surface 0 40 'jpg' 'poisson' datasets 'test'
+
+python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Porous_Sponge 0 40 'jpg' 'poisson' datasets 'test'
+
+python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/MEMS_devices_and_electrodes 0 40 'jpg' 'poisson' datasets 'test'
+
+python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Powder 0 40 'jpg' 'poisson' datasets 'test'
+
+python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Nanowires 0 40 'jpg' 'poisson' datasets 'test'
+
+python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Tips 0 40 'jpg' 'poisson' datasets 'test'
+
+
+echo " poisson mean 150 : completed for train and test"
+
+
+
+
+echo " poisson mean 200 : Starting ......"
+
 python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Biological 0 50 'jpg' 'poisson' datasets 'train'
 
 python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Particles 0 50 'jpg' 'poisson' datasets 'train'
@@ -360,7 +555,7 @@ python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Nanowires 0 50 'j
 
 python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Tips 0 50 'jpg' 'poisson' datasets 'train'
 
-echo " poisson mean 50 : For test ......"
+echo " poisson mean 200 : For test ......"
 
 python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Biological 0 50 'jpg' 'poisson' datasets 'test'
 
@@ -383,247 +578,52 @@ python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Nanowires 0 50 'j
 python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Tips 0 50 'jpg' 'poisson' datasets 'test'
 
 
-echo " poisson mean 50 : completed for train and test"
-
-
-echo " poisson mean 100 : Starting ......"
-
-python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Biological 0 100 'jpg' 'poisson' datasets 'train'
-
-python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Particles 0 100 'jpg' 'poisson' datasets 'train'
-
-python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Patterned_surface 0 100 'jpg' 'poisson' datasets 'train'
-
-python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Fibres 0 100 'jpg' 'poisson' datasets 'train'
-
-python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Films_Coated_Surface 0 100 'jpg' 'poisson' datasets 'train'
-
-python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Porous_Sponge 0 100 'jpg' 'poisson' datasets 'train'
-
-python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/MEMS_devices_and_electrodes 0 100 'jpg' 'poisson' datasets 'train'
-
-python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Powder 0 100 'jpg' 'poisson' datasets 'train'
-
-python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Nanowires 0 100 'jpg' 'poisson' datasets 'train'
-
-python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Tips 0 100 'jpg' 'poisson' datasets 'train'
-
-echo " poisson mean 100 : For test ......"
-
-python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Biological 0 100 'jpg' 'poisson' datasets 'test'
-
-python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Particles 0 100 'jpg' 'poisson' datasets 'test'
-
-python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Patterned_surface 0 100 'jpg' 'poisson' datasets 'test'
-
-python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Fibres 0 100 'jpg' 'poisson' datasets 'test'
-
-python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Films_Coated_Surface 0 100 'jpg' 'poisson' datasets 'test'
-
-python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Porous_Sponge 0 100 'jpg' 'poisson' datasets 'test'
-
-python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/MEMS_devices_and_electrodes 0 100 'jpg' 'poisson' datasets 'test'
-
-python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Powder 0 100 'jpg' 'poisson' datasets 'test'
-
-python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Nanowires 0 100 'jpg' 'poisson' datasets 'test'
-
-python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Tips 0 100 'jpg' 'poisson' datasets 'test'
-
-
-echo " poisson mean 100 : completed for train and test"
-
-
-echo " poisson mean 125 : Starting ......"
-
-python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Biological 0 125 'jpg' 'poisson' datasets 'train'
-
-python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Particles 0 125 'jpg' 'poisson' datasets 'train'
-
-python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Patterned_surface 0 125 'jpg' 'poisson' datasets 'train'
-
-python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Fibres 0 125 'jpg' 'poisson' datasets 'train'
-
-python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Films_Coated_Surface 0 125 'jpg' 'poisson' datasets 'train'
-
-python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Porous_Sponge 0 125 'jpg' 'poisson' datasets 'train'
-
-python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/MEMS_devices_and_electrodes 0 125 'jpg' 'poisson' datasets 'train'
-
-python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Powder 0 125 'jpg' 'poisson' datasets 'train'
-
-python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Nanowires 0 125 'jpg' 'poisson' datasets 'train'
-
-python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Tips 0 125 'jpg' 'poisson' datasets 'train'
-
-echo " poisson mean 125 : For test ......"
-
-python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Biological 0 125 'jpg' 'poisson' datasets 'test'
-
-python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Particles 0 125 'jpg' 'poisson' datasets 'test'
-
-python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Patterned_surface 0 125 'jpg' 'poisson' datasets 'test'
-
-python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Fibres 0 125 'jpg' 'poisson' datasets 'test'
-
-python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Films_Coated_Surface 0 125 'jpg' 'poisson' datasets 'test'
-
-python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Porous_Sponge 0 125 'jpg' 'poisson' datasets 'test'
-
-python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/MEMS_devices_and_electrodes 0 125 'jpg' 'poisson' datasets 'test'
-
-python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Powder 0 125 'jpg' 'poisson' datasets 'test'
-
-python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Nanowires 0 125 'jpg' 'poisson' datasets 'test'
-
-python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Tips 0 125 'jpg' 'poisson' datasets 'test'
-
-
-echo " poisson mean 125 : completed for train and test"
-
-
-
-echo " poisson mean 150 : Starting ......"
-
-python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Biological 0 150 'jpg' 'poisson' datasets 'train'
-
-python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Particles 0 150 'jpg' 'poisson' datasets 'train'
-
-python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Patterned_surface 0 150 'jpg' 'poisson' datasets 'train'
-
-python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Fibres 0 150 'jpg' 'poisson' datasets 'train'
-
-python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Films_Coated_Surface 0 150 'jpg' 'poisson' datasets 'train'
-
-python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Porous_Sponge 0 150 'jpg' 'poisson' datasets 'train'
-
-python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/MEMS_devices_and_electrodes 0 150 'jpg' 'poisson' datasets 'train'
-
-python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Powder 0 150 'jpg' 'poisson' datasets 'train'
-
-python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Nanowires 0 150 'jpg' 'poisson' datasets 'train'
-
-python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Tips 0 150 'jpg' 'poisson' datasets 'train'
-
-echo " poisson mean 150 : For test ......"
-
-python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Biological 0 150 'jpg' 'poisson' datasets 'test'
-
-python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Particles 0 150 'jpg' 'poisson' datasets 'test'
-
-python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Patterned_surface 0 150 'jpg' 'poisson' datasets 'test'
-
-python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Fibres 0 150 'jpg' 'poisson' datasets 'test'
-
-python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Films_Coated_Surface 0 150 'jpg' 'poisson' datasets 'test'
-
-python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Porous_Sponge 0 150 'jpg' 'poisson' datasets 'test'
-
-python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/MEMS_devices_and_electrodes 0 150 'jpg' 'poisson' datasets 'test'
-
-python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Powder 0 150 'jpg' 'poisson' datasets 'test'
-
-python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Nanowires 0 150 'jpg' 'poisson' datasets 'test'
-
-python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Tips 0 150 'jpg' 'poisson' datasets 'test'
-
-
-echo " poisson mean 150 : completed for train and test"
-
-
-
-
-echo " poisson mean 200 : Starting ......"
-
-python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Biological 0 200 'jpg' 'poisson' datasets 'train'
-
-python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Particles 0 200 'jpg' 'poisson' datasets 'train'
-
-python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Patterned_surface 0 200 'jpg' 'poisson' datasets 'train'
-
-python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Fibres 0 200 'jpg' 'poisson' datasets 'train'
-
-python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Films_Coated_Surface 0 200 'jpg' 'poisson' datasets 'train'
-
-python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Porous_Sponge 0 200 'jpg' 'poisson' datasets 'train'
-
-python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/MEMS_devices_and_electrodes 0 200 'jpg' 'poisson' datasets 'train'
-
-python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Powder 0 200 'jpg' 'poisson' datasets 'train'
-
-python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Nanowires 0 200 'jpg' 'poisson' datasets 'train'
-
-python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Tips 0 200 'jpg' 'poisson' datasets 'train'
-
-echo " poisson mean 200 : For test ......"
-
-python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Biological 0 200 'jpg' 'poisson' datasets 'test'
-
-python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Particles 0 200 'jpg' 'poisson' datasets 'test'
-
-python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Patterned_surface 0 200 'jpg' 'poisson' datasets 'test'
-
-python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Fibres 0 200 'jpg' 'poisson' datasets 'test'
-
-python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Films_Coated_Surface 0 200 'jpg' 'poisson' datasets 'test'
-
-python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Porous_Sponge 0 200 'jpg' 'poisson' datasets 'test'
-
-python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/MEMS_devices_and_electrodes 0 200 'jpg' 'poisson' datasets 'test'
-
-python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Powder 0 200 'jpg' 'poisson' datasets 'test'
-
-python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Nanowires 0 200 'jpg' 'poisson' datasets 'test'
-
-python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Tips 0 200 'jpg' 'poisson' datasets 'test'
-
-
 echo " poisson mean 200 : completed for train and test"
 
 
 echo " poisson mean 250 : Starting ......"
 
-python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Biological 0 250 'jpg' 'poisson' datasets 'train'
+python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Biological 0 35 'jpg' 'poisson' datasets 'train'
 
-python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Particles 0 250 'jpg' 'poisson' datasets 'train'
+python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Particles 0 35 'jpg' 'poisson' datasets 'train'
 
-python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Patterned_surface 0 250 'jpg' 'poisson' datasets 'train'
+python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Patterned_surface 0 35 'jpg' 'poisson' datasets 'train'
 
-python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Fibres 0 250 'jpg' 'poisson' datasets 'train'
+python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Fibres 0 35 'jpg' 'poisson' datasets 'train'
 
-python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Films_Coated_Surface 0 250 'jpg' 'poisson' datasets 'train'
+python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Films_Coated_Surface 0 35 'jpg' 'poisson' datasets 'train'
 
-python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Porous_Sponge 0 250 'jpg' 'poisson' datasets 'train'
+python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Porous_Sponge 0 35 'jpg' 'poisson' datasets 'train'
 
-python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/MEMS_devices_and_electrodes 0 250 'jpg' 'poisson' datasets 'train'
+python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/MEMS_devices_and_electrodes 0 35 'jpg' 'poisson' datasets 'train'
 
-python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Powder 0 250 'jpg' 'poisson' datasets 'train'
+python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Powder 0 35 'jpg' 'poisson' datasets 'train'
 
-python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Nanowires 0 250 'jpg' 'poisson' datasets 'train'
+python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Nanowires 0 35 'jpg' 'poisson' datasets 'train'
 
-python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Tips 0 250 'jpg' 'poisson' datasets 'train'
+python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Tips 0 35 'jpg' 'poisson' datasets 'train'
 
 echo " poisson mean 250 : For test ......"
 
-python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Biological 0 250 'jpg' 'poisson' datasets 'test'
+python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Biological 0 35 'jpg' 'poisson' datasets 'test'
 
-python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Particles 0 250 'jpg' 'poisson' datasets 'test'
+python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Particles 0 35 'jpg' 'poisson' datasets 'test'
 
-python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Patterned_surface 0 250 'jpg' 'poisson' datasets 'test'
+python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Patterned_surface 0 35 'jpg' 'poisson' datasets 'test'
 
-python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Fibres 0 250 'jpg' 'poisson' datasets 'test'
+python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Fibres 0 35 'jpg' 'poisson' datasets 'test'
 
-python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Films_Coated_Surface 0 250 'jpg' 'poisson' datasets 'test'
+python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Films_Coated_Surface 0 35 'jpg' 'poisson' datasets 'test'
 
-python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Porous_Sponge 0 250 'jpg' 'poisson' datasets 'test'
+python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Porous_Sponge 0 35 'jpg' 'poisson' datasets 'test'
 
-python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/MEMS_devices_and_electrodes 0 250 'jpg' 'poisson' datasets 'test'
+python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/MEMS_devices_and_electrodes 0 35 'jpg' 'poisson' datasets 'test'
 
-python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Powder 0 250 'jpg' 'poisson' datasets 'test'
+python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Powder 0 35 'jpg' 'poisson' datasets 'test'
 
-python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Nanowires 0 250 'jpg' 'poisson' datasets 'test'
+python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Nanowires 0 35 'jpg' 'poisson' datasets 'test'
 
-python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Tips 0 250 'jpg' 'poisson' datasets 'test'
+python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Tips 0 35 'jpg' 'poisson' datasets 'test'
 
 
 echo " poisson mean 250 : completed for train and test"
@@ -631,389 +631,389 @@ echo " poisson mean 250 : completed for train and test"
 
 echo " poisson mean 300 : Starting ......"
 
-python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Biological 0 300 'jpg' 'poisson' datasets 'train'
+python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Biological 0 45 'jpg' 'poisson' datasets 'train'
 
-python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Particles 0 300 'jpg' 'poisson' datasets 'train'
+python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Particles 0 45 'jpg' 'poisson' datasets 'train'
 
-python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Patterned_surface 0 300 'jpg' 'poisson' datasets 'train'
+python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Patterned_surface 0 45 'jpg' 'poisson' datasets 'train'
 
-python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Fibres 0 300 'jpg' 'poisson' datasets 'train'
+python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Fibres 0 45 'jpg' 'poisson' datasets 'train'
 
-python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Films_Coated_Surface 0 300 'jpg' 'poisson' datasets 'train'
+python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Films_Coated_Surface 0 45 'jpg' 'poisson' datasets 'train'
 
-python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Porous_Sponge 0 300 'jpg' 'poisson' datasets 'train'
+python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Porous_Sponge 0 45 'jpg' 'poisson' datasets 'train'
 
-python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/MEMS_devices_and_electrodes 0 300 'jpg' 'poisson' datasets 'train'
+python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/MEMS_devices_and_electrodes 0 45 'jpg' 'poisson' datasets 'train'
 
-python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Powder 0 300 'jpg' 'poisson' datasets 'train'
+python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Powder 0 45 'jpg' 'poisson' datasets 'train'
 
-python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Nanowires 0 300 'jpg' 'poisson' datasets 'train'
+python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Nanowires 0 45 'jpg' 'poisson' datasets 'train'
 
-python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Tips 0 300 'jpg' 'poisson' datasets 'train'
+python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Tips 0 45 'jpg' 'poisson' datasets 'train'
 
 echo " poisson mean 300 : For test ......"
 
-python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Biological 0 300 'jpg' 'poisson' datasets 'test'
+python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Biological 0 45 'jpg' 'poisson' datasets 'test'
 
-python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Particles 0 300 'jpg' 'poisson' datasets 'test'
+python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Particles 0 45 'jpg' 'poisson' datasets 'test'
 
-python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Patterned_surface 0 300 'jpg' 'poisson' datasets 'test'
+python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Patterned_surface 0 45 'jpg' 'poisson' datasets 'test'
 
-python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Fibres 0 300 'jpg' 'poisson' datasets 'test'
+python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Fibres 0 45 'jpg' 'poisson' datasets 'test'
 
-python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Films_Coated_Surface 0 300 'jpg' 'poisson' datasets 'test'
+python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Films_Coated_Surface 0 45 'jpg' 'poisson' datasets 'test'
 
-python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Porous_Sponge 0 300 'jpg' 'poisson' datasets 'test'
+python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Porous_Sponge 0 45 'jpg' 'poisson' datasets 'test'
 
-python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/MEMS_devices_and_electrodes 0 300 'jpg' 'poisson' datasets 'test'
+python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/MEMS_devices_and_electrodes 0 45 'jpg' 'poisson' datasets 'test'
 
-python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Powder 0 300 'jpg' 'poisson' datasets 'test'
+python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Powder 0 45 'jpg' 'poisson' datasets 'test'
 
-python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Nanowires 0 300 'jpg' 'poisson' datasets 'test'
+python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Nanowires 0 45 'jpg' 'poisson' datasets 'test'
 
-python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Tips 0 300 'jpg' 'poisson' datasets 'test'
+python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Tips 0 45 'jpg' 'poisson' datasets 'test'
 
 
 echo " poisson mean 300 : completed for train and test"
 
 
-echo " mixed 20 150 : Starting ......"
+echo " mixed 20 10 : Starting ......"
 
-python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Biological 20 150 'jpg' 'mixed' datasets 'train'
+python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Biological 20 10 'jpg' 'mixed' datasets 'train'
 
-python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Particles 20 150 'jpg' 'mixed' datasets 'train'
+python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Particles 20 10 'jpg' 'mixed' datasets 'train'
 
-python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Patterned_surface 20 150 'jpg' 'mixed' datasets 'train'
+python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Patterned_surface 20 10 'jpg' 'mixed' datasets 'train'
 
-python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Fibres 20 150 'jpg' 'mixed' datasets 'train'
+python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Fibres 20 10 'jpg' 'mixed' datasets 'train'
 
-python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Films_Coated_Surface 20 150 'jpg' 'mixed' datasets 'train'
+python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Films_Coated_Surface 20 10 'jpg' 'mixed' datasets 'train'
 
-python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Porous_Sponge 20 150 'jpg' 'mixed' datasets 'train'
+python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Porous_Sponge 20 10 'jpg' 'mixed' datasets 'train'
 
-python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/MEMS_devices_and_electrodes 20 150 'jpg' 'mixed' datasets 'train'
+python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/MEMS_devices_and_electrodes 20 10 'jpg' 'mixed' datasets 'train'
 
-python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Powder 20 150 'jpg' 'mixed' datasets 'train'
+python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Powder 20 10 'jpg' 'mixed' datasets 'train'
 
-python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Nanowires 20 150 'jpg' 'mixed' datasets 'train'
+python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Nanowires 20 10 'jpg' 'mixed' datasets 'train'
 
-python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Tips 20 150 'jpg' 'mixed' datasets 'train'
+python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Tips 20 10 'jpg' 'mixed' datasets 'train'
 
-echo " mixed 20 150 : For test ......"
+echo " mixed 20 10 : For test ......"
 
-python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Biological 20 150 'jpg' 'mixed' datasets 'test'
+python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Biological 20 10 'jpg' 'mixed' datasets 'test'
 
-python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Particles 20 150 'jpg' 'mixed' datasets 'test'
+python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Particles 20 10 'jpg' 'mixed' datasets 'test'
 
-python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Patterned_surface 20 150 'jpg' 'mixed' datasets 'test'
+python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Patterned_surface 20 10 'jpg' 'mixed' datasets 'test'
 
-python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Fibres 20 150 'jpg' 'mixed' datasets 'test'
+python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Fibres 20 10 'jpg' 'mixed' datasets 'test'
 
-python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Films_Coated_Surface 20 150 'jpg' 'mixed' datasets 'test'
+python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Films_Coated_Surface 20 10 'jpg' 'mixed' datasets 'test'
 
-python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Porous_Sponge 20 150 'jpg' 'mixed' datasets 'test'
+python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Porous_Sponge 20 10 'jpg' 'mixed' datasets 'test'
 
-python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/MEMS_devices_and_electrodes 20 150 'jpg' 'mixed' datasets 'test'
+python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/MEMS_devices_and_electrodes 20 10 'jpg' 'mixed' datasets 'test'
 
-python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Powder 20 150 'jpg' 'mixed' datasets 'test'
+python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Powder 20 10 'jpg' 'mixed' datasets 'test'
 
-python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Nanowires 20 150 'jpg' 'mixed' datasets 'test'
+python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Nanowires 20 10 'jpg' 'mixed' datasets 'test'
 
-python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Tips 20 150 'jpg' 'mixed' datasets 'test'
+python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Tips 20 10 'jpg' 'mixed' datasets 'test'
 
 
-echo " mixed 20 150 : completed for train and test"
+echo " mixed 20 10 : completed for train and test"
 
 
-echo " mixed 30 200 : Starting ......"
+echo " mixed 30 20 : Starting ......"
 
-python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Biological 30 200 'jpg' 'mixed' datasets 'train'
+python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Biological 30 20 'jpg' 'mixed' datasets 'train'
 
-python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Particles 30 200 'jpg' 'mixed' datasets 'train'
+python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Particles 30 20 'jpg' 'mixed' datasets 'train'
 
-python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Patterned_surface 30 200 'jpg' 'mixed' datasets 'train'
+python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Patterned_surface 30 20 'jpg' 'mixed' datasets 'train'
 
-python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Fibres 30 200 'jpg' 'mixed' datasets 'train'
+python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Fibres 30 20 'jpg' 'mixed' datasets 'train'
 
-python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Films_Coated_Surface 30 200 'jpg' 'mixed' datasets 'train'
+python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Films_Coated_Surface 30 20 'jpg' 'mixed' datasets 'train'
 
-python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Porous_Sponge 30 200 'jpg' 'mixed' datasets 'train'
+python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Porous_Sponge 30 20 'jpg' 'mixed' datasets 'train'
 
-python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/MEMS_devices_and_electrodes 30 200 'jpg' 'mixed' datasets 'train'
+python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/MEMS_devices_and_electrodes 30 20 'jpg' 'mixed' datasets 'train'
 
-python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Powder 30 200 'jpg' 'mixed' datasets 'train'
+python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Powder 30 20 'jpg' 'mixed' datasets 'train'
 
-python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Nanowires 30 200 'jpg' 'mixed' datasets 'train'
+python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Nanowires 30 20 'jpg' 'mixed' datasets 'train'
 
-python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Tips 30 200 'jpg' 'mixed' datasets 'train'
+python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Tips 30 20 'jpg' 'mixed' datasets 'train'
 
-echo " mixed 30 200: For test ......"
+echo " mixed 30 20: For test ......"
 
-python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Biological 30 200 'jpg' 'mixed' datasets 'test'
+python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Biological 30 20 'jpg' 'mixed' datasets 'test'
 
-python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Particles 30 200 'jpg' 'mixed' datasets 'test'
+python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Particles 30 20 'jpg' 'mixed' datasets 'test'
 
-python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Patterned_surface 30 200 'jpg' 'mixed' datasets 'test'
+python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Patterned_surface 30 20 'jpg' 'mixed' datasets 'test'
 
-python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Fibres 30 200 'jpg' 'mixed' datasets 'test'
+python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Fibres 30 20 'jpg' 'mixed' datasets 'test'
 
-python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Films_Coated_Surface 30 200 'jpg' 'mixed' datasets 'test'
+python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Films_Coated_Surface 30 20 'jpg' 'mixed' datasets 'test'
 
-python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Porous_Sponge 30 200 'jpg' 'mixed' datasets 'test'
+python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Porous_Sponge 30 20 'jpg' 'mixed' datasets 'test'
 
-python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/MEMS_devices_and_electrodes 30 200 'jpg' 'mixed' datasets 'test'
+python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/MEMS_devices_and_electrodes 30 20 'jpg' 'mixed' datasets 'test'
 
-python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Powder 30 200 'jpg' 'mixed' datasets 'test'
+python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Powder 30 20 'jpg' 'mixed' datasets 'test'
 
-python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Nanowires 30 200 'jpg' 'mixed' datasets 'test'
+python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Nanowires 30 20 'jpg' 'mixed' datasets 'test'
 
-python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Tips 30 200 'jpg' 'mixed' datasets 'test'
+python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Tips 30 20 'jpg' 'mixed' datasets 'test'
 
 
-echo " mixed 30 200 : completed for train and test"
+echo " mixed 30 20 : completed for train and test"
 
 
-echo " mixed 35 250 : Starting ......"
+echo " mixed 35 30 : Starting ......"
 
-python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Biological 35 250 'jpg' 'mixed' datasets 'train'
+python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Biological 35 30 'jpg' 'mixed' datasets 'train'
 
-python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Particles 35 250 'jpg' 'mixed' datasets 'train'
+python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Particles 35 30 'jpg' 'mixed' datasets 'train'
 
-python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Patterned_surface 35 250 'jpg' 'mixed' datasets 'train'
+python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Patterned_surface 35 30 'jpg' 'mixed' datasets 'train'
 
-python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Fibres 35 250 'jpg' 'mixed' datasets 'train'
+python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Fibres 35 30 'jpg' 'mixed' datasets 'train'
 
-python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Films_Coated_Surface 35 250 'jpg' 'mixed' datasets 'train'
+python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Films_Coated_Surface 35 30 'jpg' 'mixed' datasets 'train'
 
-python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Porous_Sponge 35 250 'jpg' 'mixed' datasets 'train'
+python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Porous_Sponge 35 30 'jpg' 'mixed' datasets 'train'
 
-python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/MEMS_devices_and_electrodes 35 250 'jpg' 'mixed' datasets 'train'
+python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/MEMS_devices_and_electrodes 35 30 'jpg' 'mixed' datasets 'train'
 
-python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Powder 35 250 'jpg' 'mixed' datasets 'train'
+python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Powder 35 30 'jpg' 'mixed' datasets 'train'
 
-python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Nanowires 35 250 'jpg' 'mixed' datasets 'train'
+python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Nanowires 35 30 'jpg' 'mixed' datasets 'train'
 
-python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Tips 35 250 'jpg' 'mixed' datasets 'train'
+python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Tips 35 30 'jpg' 'mixed' datasets 'train'
 
-echo " mixed 35 250 : For test ......"
+echo " mixed 35 30 : For test ......"
 
-python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Biological 35 250 'jpg' 'mixed' datasets 'test'
+python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Biological 35 30 'jpg' 'mixed' datasets 'test'
 
-python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Particles 35 250 'jpg' 'mixed' datasets 'test'
+python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Particles 35 30 'jpg' 'mixed' datasets 'test'
 
-python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Patterned_surface 35 250 'jpg' 'mixed' datasets 'test'
+python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Patterned_surface 35 30 'jpg' 'mixed' datasets 'test'
 
-python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Fibres 35 250 'jpg' 'mixed' datasets 'test'
+python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Fibres 35 30 'jpg' 'mixed' datasets 'test'
 
-python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Films_Coated_Surface 35 250 'jpg' 'mixed' datasets 'test'
+python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Films_Coated_Surface 35 30 'jpg' 'mixed' datasets 'test'
 
-python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Porous_Sponge 35 250 'jpg' 'mixed' datasets 'test'
+python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Porous_Sponge 35 30 'jpg' 'mixed' datasets 'test'
 
-python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/MEMS_devices_and_electrodes 35 250 'jpg' 'mixed' datasets 'test'
+python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/MEMS_devices_and_electrodes 35 30 'jpg' 'mixed' datasets 'test'
 
-python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Powder 35 250 'jpg' 'mixed' datasets 'test'
+python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Powder 35 30 'jpg' 'mixed' datasets 'test'
 
-python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Nanowires 35 250 'jpg' 'mixed' datasets 'test'
+python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Nanowires 35 30 'jpg' 'mixed' datasets 'test'
 
-python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Tips 35 250 'jpg' 'mixed' datasets 'test'
+python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Tips 35 30 'jpg' 'mixed' datasets 'test'
 
 
-echo " mixed 35 250 : completed for train and test"
+echo " mixed 35 30 : completed for train and test"
 
 
 
-echo " mixed 40 300 : Starting ......"
+echo " mixed 40 40 : Starting ......"
 
-python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Biological 40 300 'jpg' 'mixed' datasets 'train'
+python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Biological 40 40 'jpg' 'mixed' datasets 'train'
 
-python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Particles 40 300 'jpg' 'mixed' datasets 'train'
+python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Particles 40 40 'jpg' 'mixed' datasets 'train'
 
-python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Patterned_surface 40 300 'jpg' 'mixed' datasets 'train'
+python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Patterned_surface 40 40 'jpg' 'mixed' datasets 'train'
 
-python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Fibres 40 300 'jpg' 'mixed' datasets 'train'
+python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Fibres 40 40 'jpg' 'mixed' datasets 'train'
 
-python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Films_Coated_Surface 40 300 'jpg' 'mixed' datasets 'train'
+python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Films_Coated_Surface 40 40 'jpg' 'mixed' datasets 'train'
 
-python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Porous_Sponge 40 300 'jpg' 'mixed' datasets 'train'
+python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Porous_Sponge 40 40 'jpg' 'mixed' datasets 'train'
 
-python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/MEMS_devices_and_electrodes 40 300 'jpg' 'mixed' datasets 'train'
+python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/MEMS_devices_and_electrodes 40 40 'jpg' 'mixed' datasets 'train'
 
-python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Powder 40 300 'jpg' 'mixed' datasets 'train'
+python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Powder 40 40 'jpg' 'mixed' datasets 'train'
 
-python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Nanowires 40 300 'jpg' 'mixed' datasets 'train'
+python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Nanowires 40 40 'jpg' 'mixed' datasets 'train'
 
-python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Tips 40 300 'jpg' 'mixed' datasets 'train'
+python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Tips 40 40 'jpg' 'mixed' datasets 'train'
 
-echo " mixed 40 300 : For test ......"
+echo " mixed 40 40 : For test ......"
 
-python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Biological 40 300 'jpg' 'mixed' datasets 'test'
+python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Biological 40 40 'jpg' 'mixed' datasets 'test'
 
-python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Particles 40 300 'jpg' 'mixed' datasets 'test'
+python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Particles 40 40 'jpg' 'mixed' datasets 'test'
 
-python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Patterned_surface 40 300 'jpg' 'mixed' datasets 'test'
+python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Patterned_surface 40 40 'jpg' 'mixed' datasets 'test'
 
-python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Fibres 40 300 'jpg' 'mixed' datasets 'test'
+python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Fibres 40 40 'jpg' 'mixed' datasets 'test'
 
-python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Films_Coated_Surface 40 300 'jpg' 'mixed' datasets 'test'
+python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Films_Coated_Surface 40 40 'jpg' 'mixed' datasets 'test'
 
-python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Porous_Sponge 40 300 'jpg' 'mixed' datasets 'test'
+python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Porous_Sponge 40 40 'jpg' 'mixed' datasets 'test'
 
-python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/MEMS_devices_and_electrodes 40 300 'jpg' 'mixed' datasets 'test'
+python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/MEMS_devices_and_electrodes 40 40 'jpg' 'mixed' datasets 'test'
 
-python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Powder 40 300'jpg' 'mixed' datasets 'test'
+python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Powder 40 40'jpg' 'mixed' datasets 'test'
 
-python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Nanowires 40 300 'jpg' 'mixed' datasets 'test'
+python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Nanowires 40 40 'jpg' 'mixed' datasets 'test'
 
-python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Tips 40 300 'jpg' 'mixed' datasets 'test'
+python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Tips 40 40 'jpg' 'mixed' datasets 'test'
 
 
-echo " mixed 40 300 : completed for train and test"
+echo " mixed 40 40 : completed for train and test"
 
 
 
 
-echo " mixed 45 250: Starting ......"
+echo " mixed 45 50: Starting ......"
 
-python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Biological 45 250 'jpg' 'mixed' datasets 'train'
+python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Biological 45 50 'jpg' 'mixed' datasets 'train'
 
-python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Particles 45 250 'jpg' 'mixed' datasets 'train'
+python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Particles 45 50 'jpg' 'mixed' datasets 'train'
 
-python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Patterned_surface 45 250 'jpg' 'mixed' datasets 'train'
+python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Patterned_surface 45 50 'jpg' 'mixed' datasets 'train'
 
-python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Fibres 45 250 'jpg' 'mixed' datasets 'train'
+python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Fibres 45 50 'jpg' 'mixed' datasets 'train'
 
-python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Films_Coated_Surface 45 250 'jpg' 'mixed' datasets 'train'
+python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Films_Coated_Surface 45 50 'jpg' 'mixed' datasets 'train'
 
-python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Porous_Sponge 45 250 'jpg' 'mixed' datasets 'train'
+python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Porous_Sponge 45 50 'jpg' 'mixed' datasets 'train'
 
-python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/MEMS_devices_and_electrodes 45 250 'jpg' 'mixed' datasets 'train'
+python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/MEMS_devices_and_electrodes 45 50 'jpg' 'mixed' datasets 'train'
 
-python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Powder 45 250 'jpg' 'mixed' datasets 'train'
+python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Powder 45 50 'jpg' 'mixed' datasets 'train'
 
-python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Nanowires 45 250 'jpg' 'mixed' datasets 'train'
+python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Nanowires 45 50 'jpg' 'mixed' datasets 'train'
 
-python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Tips 45 250 'jpg' 'mixed' datasets 'train'
+python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Tips 45 50 'jpg' 'mixed' datasets 'train'
 
-echo " mixed 45 250 : For test ......"
+echo " mixed 45 50 : For test ......"
 
-python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Biological 45 250 'jpg' 'mixed' datasets 'test'
+python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Biological 45 50 'jpg' 'mixed' datasets 'test'
 
-python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Particles 45 250 'jpg' 'mixed' datasets 'test'
+python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Particles 45 50 'jpg' 'mixed' datasets 'test'
 
-python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Patterned_surface 45 250 'jpg' 'mixed' datasets 'test'
+python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Patterned_surface 45 50 'jpg' 'mixed' datasets 'test'
 
-python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Fibres 45 250 'jpg' 'mixed' datasets 'test'
+python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Fibres 45 50 'jpg' 'mixed' datasets 'test'
 
-python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Films_Coated_Surface 45 250 'jpg' 'mixed' datasets 'test'
+python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Films_Coated_Surface 45 50 'jpg' 'mixed' datasets 'test'
 
-python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Porous_Sponge 45 250 'jpg' 'mixed' datasets 'test'
+python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Porous_Sponge 45 50 'jpg' 'mixed' datasets 'test'
 
-python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/MEMS_devices_and_electrodes 45 250 'jpg' 'mixed' datasets 'test'
+python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/MEMS_devices_and_electrodes 45 50 'jpg' 'mixed' datasets 'test'
 
-python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Powder 45 250 'jpg' 'mixed' datasets 'test'
+python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Powder 45 50 'jpg' 'mixed' datasets 'test'
 
-python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Nanowires 45 250 'jpg' 'mixed' datasets 'test'
+python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Nanowires 45 50 'jpg' 'mixed' datasets 'test'
 
-python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Tips 45 250 'jpg' 'mixed' datasets 'test'
+python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Tips 45 50 'jpg' 'mixed' datasets 'test'
 
 
-echo " mixed 45 250 : completed for train and test"
+echo " mixed 45 50 : completed for train and test"
 
 
-echo " mixed 50 300 : Starting ......"
+echo " mixed 50 35 : Starting ......"
 
-python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Biological 50 300 'jpg' 'mixed' datasets 'train'
+python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Biological 50 35 'jpg' 'mixed' datasets 'train'
 
-python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Particles 50 300 'jpg' 'mixed' datasets 'train'
+python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Particles 50 35 'jpg' 'mixed' datasets 'train'
 
-python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Patterned_surface 50 300 'jpg' 'mixed' datasets 'train'
+python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Patterned_surface 50 35 'jpg' 'mixed' datasets 'train'
 
-python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Fibres 50 300 'jpg' 'mixed' datasets 'train'
+python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Fibres 50 35 'jpg' 'mixed' datasets 'train'
 
-python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Films_Coated_Surface 50 300 'jpg' 'mixed' datasets 'train'
+python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Films_Coated_Surface 50 35 'jpg' 'mixed' datasets 'train'
 
-python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Porous_Sponge 50 300 'jpg' 'mixed' datasets 'train'
+python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Porous_Sponge 50 35 'jpg' 'mixed' datasets 'train'
 
-python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/MEMS_devices_and_electrodes 50 300 'jpg' 'mixed' datasets 'train'
+python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/MEMS_devices_and_electrodes 50 35 'jpg' 'mixed' datasets 'train'
 
-python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Powder 50 300 'jpg' 'mixed' datasets 'train'
+python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Powder 50 35 'jpg' 'mixed' datasets 'train'
 
-python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Nanowires 50 300 'jpg' 'mixed' datasets 'train'
+python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Nanowires 50 35 'jpg' 'mixed' datasets 'train'
 
-python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Tips 50 300 'jpg' 'mixed' datasets 'train'
+python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Tips 50 35 'jpg' 'mixed' datasets 'train'
 
-echo " mixed 50 300 : For test ......"
+echo " mixed 50 35 : For test ......"
 
-python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Biological 50 300 'jpg' 'mixed' datasets 'test'
+python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Biological 50 35 'jpg' 'mixed' datasets 'test'
 
-python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Particles 50 300 'jpg' 'mixed' datasets 'test'
+python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Particles 50 35 'jpg' 'mixed' datasets 'test'
 
-python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Patterned_surface 50 300 'jpg' 'mixed' datasets 'test'
+python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Patterned_surface 50 35 'jpg' 'mixed' datasets 'test'
 
-python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Fibres 50 300 'jpg' 'mixed' datasets 'test'
+python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Fibres 50 35 'jpg' 'mixed' datasets 'test'
 
-python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Films_Coated_Surface 50 300 'jpg' 'mixed' datasets 'test'
+python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Films_Coated_Surface 50 35 'jpg' 'mixed' datasets 'test'
 
-python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Porous_Sponge 50 300 'jpg' 'mixed' datasets 'test'
+python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Porous_Sponge 50 35 'jpg' 'mixed' datasets 'test'
 
-python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/MEMS_devices_and_electrodes 50 300 'jpg' 'mixed' datasets 'test'
+python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/MEMS_devices_and_electrodes 50 35 'jpg' 'mixed' datasets 'test'
 
-python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Powder 50 300 'jpg' 'mixed' datasets 'test'
+python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Powder 50 35 'jpg' 'mixed' datasets 'test'
 
-python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Nanowires 50 300 'jpg' 'mixed' datasets 'test'
+python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Nanowires 50 35 'jpg' 'mixed' datasets 'test'
 
-python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Tips 50 300 'jpg' 'mixed' datasets 'test'
+python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Tips 50 35 'jpg' 'mixed' datasets 'test'
 
 
-echo " mixed 50 300 : completed for train and test"
+echo " mixed 50 35 : completed for train and test"
 
 
-echo " mixed 35 200: Starting ......"
+echo " mixed 35 45: Starting ......"
 
-python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Biological 35 200 'jpg' 'mixed' datasets 'train'
+python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Biological 35 45 'jpg' 'mixed' datasets 'train'
 
-python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Particles 35 200 'jpg' 'mixed' datasets 'train'
+python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Particles 35 45 'jpg' 'mixed' datasets 'train'
 
-python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Patterned_surface 35 200 'jpg' 'mixed' datasets 'train'
+python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Patterned_surface 35 45 'jpg' 'mixed' datasets 'train'
 
-python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Fibres 35 200 'jpg' 'mixed' datasets 'train'
+python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Fibres 35 45 'jpg' 'mixed' datasets 'train'
 
-python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Films_Coated_Surface 35 200 'jpg' 'mixed' datasets 'train'
+python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Films_Coated_Surface 35 45 'jpg' 'mixed' datasets 'train'
 
-python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Porous_Sponge 35 200 'jpg' 'mixed' datasets 'train'
+python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Porous_Sponge 35 45 'jpg' 'mixed' datasets 'train'
 
-python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/MEMS_devices_and_electrodes 35 200 'jpg' 'mixed' datasets 'train'
+python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/MEMS_devices_and_electrodes 35 45 'jpg' 'mixed' datasets 'train'
 
-python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Powder 35 200 'jpg' 'mixed' datasets 'train'
+python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Powder 35 45 'jpg' 'mixed' datasets 'train'
 
-python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Nanowires 35 200 'jpg' 'mixed' datasets 'train'
+python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Nanowires 35 45 'jpg' 'mixed' datasets 'train'
 
-python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Tips 35 200 'jpg' 'mixed' datasets 'train'
+python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Tips 35 45 'jpg' 'mixed' datasets 'train'
 
-echo " mixed 35 200 : For test ......"
+echo " mixed 35 45 : For test ......"
 
-python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Biological 35 200 'jpg' 'mixed' datasets 'test'
+python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Biological 35 45 'jpg' 'mixed' datasets 'test'
 
-python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Particles 35 200 'jpg' 'mixed' datasets 'test'
+python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Particles 35 45 'jpg' 'mixed' datasets 'test'
 
-python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Patterned_surface 35 200 'jpg' 'mixed' datasets 'test'
+python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Patterned_surface 35 45 'jpg' 'mixed' datasets 'test'
 
-python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Fibres 35 200 'jpg' 'mixed' datasets 'test'
+python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Fibres 35 45 'jpg' 'mixed' datasets 'test'
 
-python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Films_Coated_Surface 35 200 'jpg' 'mixed' datasets 'test'
+python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Films_Coated_Surface 35 45 'jpg' 'mixed' datasets 'test'
 
-python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Porous_Sponge 35 200 'jpg' 'mixed' datasets 'test'
+python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Porous_Sponge 35 45 'jpg' 'mixed' datasets 'test'
 
-python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/MEMS_devices_and_electrodes 35 200 'jpg' 'mixed' datasets 'test'
+python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/MEMS_devices_and_electrodes 35 45 'jpg' 'mixed' datasets 'test'
 
-python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Powder 35 200 'jpg' 'mixed' datasets 'test'
+python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Powder 35 45 'jpg' 'mixed' datasets 'test'
 
-python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Nanowires 35 200 'jpg' 'mixed' datasets 'test'
+python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Nanowires 35 45 'jpg' 'mixed' datasets 'test'
 
-python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Tips 35 200 'jpg' 'mixed' datasets 'test'
+python prepare_datasets_jpg.py ../datasets/nffa_europe_100_sem/Tips 35 45 'jpg' 'mixed' datasets 'test'
 
 
-echo " mixed 35 200 : completed for train and test"
+echo " mixed 35 45 : completed for train and test"
 
 echo "Finally, dataset creation process is completed!"
 
