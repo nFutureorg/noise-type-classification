@@ -41,12 +41,13 @@ from tensorflow.keras.optimizers import SGD
 
 
 #Dataset
-train_path='dataset/train_im'
-test_path='dataset/test_im'
+train_path='datasets/train'
+val_path='datasets/validation'
+test_path='datasets/test'
 #val_path='../input/bupcovidfunding/Lung Segmentation Data/Val'
 
-img_height = 481
-img_width = 321
+img_height = 600
+img_width = 1024
 
 train_batches= ImageDataGenerator(
     featurewise_center=True,
@@ -54,16 +55,14 @@ train_batches= ImageDataGenerator(
     rotation_range=20,
     width_shift_range=0.2,
     height_shift_range=0.2,
-    validation_split=0.1,
-    horizontal_flip=True).flow_from_directory(train_path,subset='training',target_size=(img_height, img_width),batch_size=32,shuffle=True)
+    horizontal_flip=True).flow_from_directory(train_path,target_size=(img_height, img_width),batch_size=32,shuffle=True)
 val_batches= ImageDataGenerator(
     featurewise_center=True,
     featurewise_std_normalization=True,
     rotation_range=20,
     width_shift_range=0.2,
     height_shift_range=0.2,
-    validation_split=0.1,
-    horizontal_flip=True).flow_from_directory(train_path,subset='validation', target_size=(img_height, img_width),batch_size=32,shuffle=False)
+    horizontal_flip=True).flow_from_directory(val_path, target_size=(img_height, img_width),batch_size=32,shuffle=False)
 test_batches= ImageDataGenerator(
     featurewise_center=True,
     featurewise_std_normalization=True,
@@ -136,7 +135,7 @@ plt.legend()
 #sn.set(font_scale=1)
 plt.savefig('train.pdf', format='pdf', dpi=300)
 plt.savefig('train.png', format='png', dpi=300)
-plt.show()
+#plt.show()
 
 #generate training curve
 #import matplotlib.pyplot as plt
@@ -153,7 +152,7 @@ plt.legend()
 #sn.set(font_scale=1)
 plt.savefig('results/train.pdf', format='pdf', dpi=300)
 plt.savefig('results/train.png', format='png', dpi=300)
-plt.show()
+#plt.show()
 
 # Commented out IPython magic to ensure Python compatibility.
 #generate Result
@@ -193,38 +192,21 @@ import numpy as np
 original = test_batches.labels
 cm=confusion_matrix(original,Y_pred)
 print(cm)
-y_true = ["0","1","2","3","4","5","6","7","8"]
+y_true = ["0","1","2"]
 #y_true=['Angry', 'Fear', 'Happy','Neutral','Sad']
 data = cm
-class1_acc = data[0][0]/(data[0][0]+data[0][1]+data[0][2] + data[0][3]+data[0][4]+data[0][5] + data[0][6]+data[0][7]+data[0][8])
+class1_acc = data[0][0]/(data[0][0]+data[0][1]+data[0][2])
 
-class2_acc = data[1][1]/(data[1][0]+data[1][1]+data[1][2] + data[1][3]+data[1][4]+data[1][5] + data[1][6]+data[1][7]+data[1][8])
+class2_acc = data[1][1]/(data[1][0]+data[1][1]+data[1][2])
 
-class3_acc = data[2][2]/(data[2][0]+data[2][1]+data[2][2] + data[2][3]+data[2][4]+data[2][5] + data[2][6]+data[2][7]+data[2][8])
+class3_acc = data[2][2]/(data[2][0]+data[2][1]+data[2][2])
 
-class4_acc = data[3][3]/(data[3][0]+data[3][1]+data[3][2] + data[3][3]+data[3][4]+data[3][5] + data[3][6]+data[3][7]+data[3][8])
 
-class5_acc = data[4][4]/(data[4][0]+data[4][1]+data[4][2] + data[4][3]+data[4][4]+data[4][5] + data[4][6]+data[4][7]+data[4][8])
+print('Gaussian acc: ',class1_acc)
+print('Poisson acc: ',class2_acc)
+print('Mixed acc: ',class3_acc)
 
-class6_acc = data[5][5]/(data[5][0]+data[5][1]+data[5][2] + data[5][3]+data[5][4]+data[5][5] + data[5][6]+data[5][7]+data[5][8])
 
-class7_acc = data[6][6]/(data[6][0]+data[6][1]+data[6][2] + data[6][3]+data[6][4]+data[6][5] + data[6][6]+data[6][7]+data[6][8])
-
-class8_acc = data[7][7]/(data[7][0]+data[7][1]+data[7][2] + data[7][3]+data[7][4]+data[7][5] + data[7][6]+data[7][7]+data[7][8])
-
-class9_acc = data[8][8]/(data[8][0]+data[8][1]+data[8][2] + data[8][3]+data[8][4]+data[8][5] + data[8][6]+data[8][7]+data[8][8])
-
-print('Erlang acc: ',class1_acc)
-print('Exponential acc: ',class2_acc)
-print('Gaussian acc: ',class3_acc)
-
-print('Lognormal acc: ',class4_acc)
-print('Poisson acc: ',class5_acc)
-print('Rayleigh acc: ',class6_acc)
-
-print('Salt and Pepper acc: ',class7_acc)
-print('Speckle acc: ',class8_acc)
-print('Uniform acc: ',class9_acc)
 
 df_cm = pd.DataFrame(data, columns=np.unique(y_true), index = np.unique(y_true))
 #df_cm.index.name = 'Actual'
@@ -275,35 +257,16 @@ print(cm)
 y_true = ["0","1","2","3","4","5","6","7","8"]
 #y_true=['Angry', 'Fear', 'Happy','Neutral','Sad']
 data = cm
-class1_acc = data[0][0]/(data[0][0]+data[0][1]+data[0][2] + data[0][3]+data[0][4]+data[0][5] + data[0][6]+data[0][7]+data[0][8])
+class1_acc = data[0][0]/(data[0][0]+data[0][1]+data[0][2])
 
-class2_acc = data[1][1]/(data[1][0]+data[1][1]+data[1][2] + data[1][3]+data[1][4]+data[1][5] + data[1][6]+data[1][7]+data[1][8])
+class2_acc = data[1][1]/(data[1][0]+data[1][1]+data[1][2])
 
-class3_acc = data[2][2]/(data[2][0]+data[2][1]+data[2][2] + data[2][3]+data[2][4]+data[2][5] + data[2][6]+data[2][7]+data[2][8])
+class3_acc = data[2][2]/(data[2][0]+data[2][1]+data[2][2])
 
-class4_acc = data[3][3]/(data[3][0]+data[3][1]+data[3][2] + data[3][3]+data[3][4]+data[3][5] + data[3][6]+data[3][7]+data[3][8])
 
-class5_acc = data[4][4]/(data[4][0]+data[4][1]+data[4][2] + data[4][3]+data[4][4]+data[4][5] + data[4][6]+data[4][7]+data[4][8])
-
-class6_acc = data[5][5]/(data[5][0]+data[5][1]+data[5][2] + data[5][3]+data[5][4]+data[5][5] + data[5][6]+data[5][7]+data[5][8])
-
-class7_acc = data[6][6]/(data[6][0]+data[6][1]+data[6][2] + data[6][3]+data[6][4]+data[6][5] + data[6][6]+data[6][7]+data[6][8])
-
-class8_acc = data[7][7]/(data[7][0]+data[7][1]+data[7][2] + data[7][3]+data[7][4]+data[7][5] + data[7][6]+data[7][7]+data[7][8])
-
-class9_acc = data[8][8]/(data[8][0]+data[8][1]+data[8][2] + data[8][3]+data[8][4]+data[8][5] + data[8][6]+data[8][7]+data[8][8])
-
-print('Erlang acc: ',class1_acc)
-print('Exponential acc: ',class2_acc)
-print('Gaussian acc: ',class3_acc)
-
-print('Lognormal acc: ',class4_acc)
-print('Poisson acc: ',class5_acc)
-print('Rayleigh acc: ',class6_acc)
-
-print('Salt and Pepper acc: ',class7_acc)
-print('Speckle acc: ',class8_acc)
-print('Uniform acc: ',class9_acc)
+print('Gaussian acc: ',class1_acc)
+print('Poisson acc: ',class2_acc)
+print('Mixed acc: ',class3_acc)
 
 df_cm = pd.DataFrame(data, columns=np.unique(y_true), index = np.unique(y_true))
 #df_cm.index.name = 'Actual'
