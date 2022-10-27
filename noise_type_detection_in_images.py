@@ -26,34 +26,34 @@ import seaborn as sns
 import matplotlib.pyplot as plt
 import numpy as np
 import keras
-from tensorflow.keras import backend as k
-import tensorflow as tf
-from tf.keras.models import load_model
-
-from tf.keras.models import Sequential
-from tf.keras.layers import Activation
-from tf.keras.layers.core import Dense,Flatten
-from tf.keras.optimizers import Adam
-from tf.keras.metrics import categorical_crossentropy
-from tf.keras.preprocessing.image import ImageDataGenerator
-from tf.keras.layers import BatchNormalization
-from tf.keras.layers.convolutional import *
+from tensorflow.python.keras import backend as k
+from keras.models import Sequential
+from keras.layers import Activation
+from keras.layers.core import Dense,Flatten
+from tensorflow.keras.optimizers import Adam
+from keras.metrics import categorical_crossentropy
+from keras.preprocessing.image import ImageDataGenerator
+from keras.layers import BatchNormalization
+from keras.layers.convolutional import *
 from matplotlib import pyplot as plt
 from sklearn.metrics import confusion_matrix
 import itertools
 import matplotlib.pyplot as plt
 # %matplotlib inline
-from tf.keras.preprocessing import image
-from tf.keras.applications import imagenet_utils
-from tf.keras.applications.inception_v3 import InceptionV3, preprocess_input
-from tf.keras.models import Model
-from tf.keras.models import model_from_json
-from tf.keras.layers import Input
-from tf.keras.layers import Dense, Activation, Dropout, Flatten, Conv2D, MaxPooling2D
+from keras.models import Model
+from keras.preprocessing import image
+from keras.applications import imagenet_utils
+from keras.applications.inception_v3 import InceptionV3, preprocess_input
+from keras.preprocessing import image
+from keras.models import Model
+from keras.models import model_from_json
+from keras.layers import Input
+from keras.layers import Dense, Activation, Dropout, Flatten, Conv2D, MaxPooling2D
+from keras.layers import BatchNormalization
+from keras.models import Sequential
 #from keras.models import Sequential
-#from tf.keras.layers.core import Dense, Dropout, Activation
-from tf.keras.optimizers import SGD
-from tf.keras.callbacks import EarlyStopping, ModelCheckpoint
+from keras.layers.core import Dense, Dropout, Activation
+from tensorflow.keras.optimizers import SGD
 
 
 #Dataset
@@ -91,7 +91,8 @@ test_batches= ImageDataGenerator(
 #val_batches= ImageDataGenerator(preprocessing_function=keras.applications.densenet.preprocess_input).flow_from_directory(val_path,target_size=(224,224),batch_size=32,shuffle=False)
 #test_batches= ImageDataGenerator(preprocessing_function=keras.applications.densenet.preprocess_input).flow_from_directory(test_path,target_size=(224,224),batch_size=32,shuffle=False)
 
-
+import tensorflow as tf
+from keras.models import load_model
 #Change model
 model = tf.keras.applications.xception.Xception(
     include_top=True,
@@ -125,7 +126,7 @@ model.summary()
 
 model.compile(Adam(lr=0.001),loss='categorical_crossentropy',metrics=['accuracy'])
 
-
+from keras.callbacks import EarlyStopping, ModelCheckpoint
 checkpoint = ModelCheckpoint('results/xception_best.h5', verbose=1, monitor='val_accuracy',save_best_only=True, mode='max')
 his = model.fit(train_batches,steps_per_epoch=np.ceil(train_batches.samples / train_batches.batch_size),epochs =30 ,verbose=1,validation_data = val_batches,validation_steps=np.ceil(val_batches.samples / val_batches.batch_size),callbacks=[checkpoint,tf.keras.callbacks.EarlyStopping(monitor='val_accuracy', patience=5)])
 
