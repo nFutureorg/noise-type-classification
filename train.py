@@ -84,7 +84,7 @@ testGen = csv_feature_generator(testPath, config.BATCH_SIZE,
 
 # define our simple neural network
 model = Sequential()
-model.add(Dense(256, input_shape=(7 * 7 * model.output[-1].shape[2],), activation="relu"))
+model.add(Dense(256, input_shape=(7 * 7 * models.output[-1].shape[2],), activation="relu"))
 model.add(Dense(16, activation="relu"))
 model.add(Dense(len(config.CLASSES), activation="softmax"))
 # compile the model
@@ -104,12 +104,12 @@ H = model.fit(x=trainGen, steps_per_epoch=totalTrain // config.BATCH_SIZE,
 hist_df = pd.DataFrame(H.history) 
 
 # save to json:  
-hist_json_file = 'history_model'+str(models)+'_'+str(version)+'.json' 
+hist_json_file = 'results/history_model'+str(models)+'_'+str(version)+'.json' 
 with open(hist_json_file, mode='w') as f:
     hist_df.to_json(f)
 
 # or save to csv: 
-hist_csv_file = 'history_model'+str(models)+'_'+str(version)+'.csv'
+hist_csv_file = 'results/history_model'+str(models)+'_'+str(version)+'.csv'
 with open(hist_csv_file, mode='w') as f:
     hist_df.to_csv(f)
 
@@ -143,7 +143,7 @@ df_cm = pd.DataFrame(data, columns=np.unique(y_true), index = np.unique(y_true))
 #df_cm.columns.name = 'Predicted'
 sn.set(font_scale=2)#for label size
 sn.heatmap(df_cm, cmap="Blues", annot=True,annot_kws={"size": 24}, fmt="d")
-plt.savefig('Cm_'+str(models)+'_'+str(version)+'.pdf', format='pdf', dpi=300)
-plt.savefig('Cm_'+str(models)+'_'+str(version)+'.png', format='png', dpi=300)
+plt.savefig('results/Cm_'+str(models)+'_'+str(version)+'.pdf', format='pdf', dpi=300)
+plt.savefig('results/Cm_'+str(models)+'_'+str(version)+'.png', format='png', dpi=300)
 
 

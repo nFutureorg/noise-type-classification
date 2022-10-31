@@ -342,8 +342,8 @@ ax = fig.add_subplot(111)
 plt.boxplot(results)
 ax.set_xticklabels(names)
 #pyplot.show()
-plt.savefig('com_ml.pdf', format='pdf', dpi=300)
-plt.savefig('com_ml.png', format='png', dpi=300)
+plt.savefig('results/com_ml.pdf', format='pdf', dpi=300)
+plt.savefig('results/com_ml.png', format='png', dpi=300)
 plt.close()
 
 
@@ -463,8 +463,8 @@ df_cm = pd.DataFrame(data, columns=np.unique(y_true), index = np.unique(y_true))
 #df_cm.columns.name = 'Predicted'
 sn.set(font_scale=2)#for label size
 sn.heatmap(df_cm, cmap="Blues", annot=True,annot_kws={"size": 24}, fmt="d")
-plt.savefig('Cm_test_ml.pdf', format='pdf', dpi=300)
-plt.savefig('Cm_test_ml.png', format='png', dpi=300)
+plt.savefig('results/Cm_test_ml.pdf', format='pdf', dpi=300)
+plt.savefig('results/Cm_test_ml.png', format='png', dpi=300)
 plt.close()
 
 
@@ -492,12 +492,12 @@ H = model.fit(trainDataGlobal, trainLabelsGlobal, validation_data = (testDataGlo
 hist_df = pd.DataFrame(H.history) 
 
 # save to json:  
-hist_json_file = 'history_modeldl.json' 
+hist_json_file = 'results/history_modelml.json' 
 with open(hist_json_file, mode='w') as f:
     hist_df.to_json(f)
 
 # or save to csv: 
-hist_csv_file = 'history_modeldl.csv'
+hist_csv_file = 'results/history_modelml.csv'
 with open(hist_csv_file, mode='w') as f:
     hist_df.to_csv(f)
 
@@ -531,8 +531,8 @@ df_cm = pd.DataFrame(data, columns=np.unique(y_true), index = np.unique(y_true))
 #df_cm.columns.name = 'Predicted'
 sn.set(font_scale=2)#for label size
 sn.heatmap(df_cm, cmap="Blues", annot=True,annot_kws={"size": 24}, fmt="d")
-plt.savefig('Cm_testml.pdf', format='pdf', dpi=300)
-plt.savefig('Cm_testml.png', format='png', dpi=300)
+plt.savefig('results/Cm_testml.pdf', format='pdf', dpi=300)
+plt.savefig('results/Cm_testml.png', format='png', dpi=300)
 plt.close()
 
 
