@@ -14,6 +14,7 @@ import pandas as pd
 import seaborn as sn
 import matplotlib.pyplot as plt
 #%matplotlib inline
+from tensorflow.keras.applications import ResNet50, Xception, VGG16, InceptionV3, DenseNet121, MobileNetV2, EfficientNetB0, EfficientNetB1, EfficientNetB2, EfficientNetB3, EfficientNetB4, EfficientNetB5, EfficientNetB6, EfficientNetB7
 
 
 
@@ -55,6 +56,56 @@ def csv_feature_generator(inputPath, bs, numClasses, mode="train"):
 models = sys.argv[1]
 version = sys.argv[2]
 
+# load the ResNet50 network and initialize the label encoder
+print("[INFO] loading network...")
+
+if models == 'resnet':
+    model = ResNet50(weights="imagenet", include_top=False)
+    out = model.output[-1].shape[2]
+elif models == 'vgg':
+    model = VGG16(weights="imagenet", include_top=False)
+    out = model.output[-1].shape[2]
+elif models == 'xception':
+    model = Xception(weights="imagenet", include_top=False)
+    out = model.output[-1].shape[2]
+elif models == 'inception':
+    model = InceptionV3(weights="imagenet", include_top=False)   
+    out = model.output[-1].shape[2]
+elif models == 'densenet':
+    model = DenseNet121(weights="imagenet", include_top=False)
+    out = model.output[-1].shape[2]
+elif models == 'mobilenet':
+    model = MobileNetV2(weights="imagenet", include_top=False)
+    out = model.output[-1].shape[2]
+elif models == 'efficientnet' and version :
+    if version == 0:
+        model = EfficientNetB0(weights="imagenet", include_top=False)
+        out = model.output[-1].shape[2]
+    elif version == 1:
+        model = EfficientNetB1(weights="imagenet", include_top=False) 
+        out = model.output[-1].shape[2]
+    elif version == 2:
+        model = EfficientNetB2(weights="imagenet", include_top=False)  
+        out = model.output[-1].shape[2]
+    elif version == 3:
+        model = EfficientNetB3(weights="imagenet", include_top=False)  
+        out = model.output[-1].shape[2]
+    elif version == 4:
+        model = EfficientNetB4(weights="imagenet", include_top=False)  
+        out = model.output[-1].shape[2]
+    elif version == 5:
+        model = EfficientNetB5(weights="imagenet", include_top=False)
+        out = model.output[-1].shape[2]
+    elif version == 6:
+        model = EfficientNetB6(weights="imagenet", include_top=False)
+        out = model.output[-1].shape[2]
+    else:
+        model = EfficientNetB7(weights="imagenet", include_top=False) 
+        out = model.output[-1].shape[2]
+else:
+    print('Input the name of the model')
+
+
 # load the label encoder from disk
 le = pickle.loads(open('output/le_'+str(models)+'_'+str(version)+'.cpickle', "rb").read())
 # derive the paths to the training, validation, and testing CSV files
@@ -84,7 +135,7 @@ testGen = csv_feature_generator(testPath, config.BATCH_SIZE,
 
 # define our simple neural network
 model = Sequential()
-model.add(Dense(256, input_shape=(7 * 7 * models.output[-1].shape[2],), activation="relu"))
+model.add(Dense(256, input_shape=(7 * 7 * out,), activation="relu"))
 model.add(Dense(16, activation="relu"))
 model.add(Dense(len(config.CLASSES), activation="softmax"))
 # compile the model
