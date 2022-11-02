@@ -45,6 +45,7 @@ def csv_feature_generator(inputPath, bs, numClasses, mode="train"):
 			# extract the class label and features from the row
 			row = row.strip().split(",")
 			label = row[0]
+            print(label)
 			label = to_categorical(label, num_classes=numClasses)
 			features = np.array(row[1:], dtype="float")
 			# update the data and label lists
@@ -110,11 +111,11 @@ else:
 le = pickle.loads(open('output/le_'+str(models)+'_'+str(version)+'.cpickle', "rb").read())
 # derive the paths to the training, validation, and testing CSV files
 trainPath = os.path.sep.join([config.BASE_CSV_PATH,
-	"{0}{1}.csv".format(config.TRAIN,str(models)+'_'+str(version))])
+	"{}.csv".format(config.TRAIN+str(models)+'_'+str(version))])
 valPath = os.path.sep.join([config.BASE_CSV_PATH,
-	"{0}{1}.csv".format(config.VAL,str(models)+'_'+str(version))])
+	"{}.csv".format(config.VAL+str(models)+'_'+str(version))])
 testPath = os.path.sep.join([config.BASE_CSV_PATH,
-	"{0}{1}.csv".format(config.TEST,str(models)+'_'+str(version))])
+	"{}.csv".format(config.TEST+str(models)+'_'+str(version))])
 # determine the total number of images in the training and validation
 # sets
 totalTrain = sum([1 for l in open(trainPath)])
