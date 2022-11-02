@@ -19,40 +19,40 @@ from tensorflow.keras.applications import ResNet50, Xception, VGG16, InceptionV3
 
 
 def csv_feature_generator(inputPath, bs, numClasses, mode="train"):
-	# open the input file for reading
-	f = open(inputPath, "r")
-	# loop indefinitely
-	while True:
-		# initialize our batch of data and labels
-		data = []
-		labels = []
-		# keep looping until we reach our batch size
-		while len(data) < bs:
-			# attempt to read the next row of the CSV file
-			row = f.readline()
-            			# check to see if the row is empty, indicating we have
-			# reached the end of the file
-			if row == "":
-				# reset the file pointer to the beginning of the file
-				# and re-read the row
-				f.seek(0)
-				row = f.readline()
-				# if we are evaluating we should now break from our
-				# loop to ensure we don't continue to fill up the
-				# batch from samples at the beginning of the file
-				if mode == "eval":
-					break
-			# extract the class label and features from the row
-			row = row.strip().split(",")
-			label = row[0]
+    # open the input file for reading
+    f = open(inputPath, "r")
+    # loop indefinitely
+    while True:
+        # initialize our batch of data and labels
+        data = []
+        labels = []
+        # keep looping until we reach our batch size
+        while len(data) < bs:
+            # attempt to read the next row of the CSV file
+            row = f.readline()
+                        # check to see if the row is empty, indicating we have
+            # reached the end of the file
+            if row == "":
+                # reset the file pointer to the beginning of the file
+                # and re-read the row
+                f.seek(0)
+                row = f.readline()
+                # if we are evaluating we should now break from our
+                # loop to ensure we don't continue to fill up the
+                # batch from samples at the beginning of the file
+                if mode == "eval":
+                    break
+            # extract the class label and features from the row
+            row = row.strip().split(",")
+            label = row[0]
             print(label)
-			label = to_categorical(label, num_classes=numClasses)
-			features = np.array(row[1:], dtype="float")
-			# update the data and label lists
-			data.append(features)
-			labels.append(label)
-		# yield the batch to the calling function
-		yield (np.array(data), np.array(labels))
+            label = to_categorical(label, num_classes=numClasses)
+            features = np.array(row[1:], dtype="float")
+            # update the data and label lists
+            data.append(features)
+            labels.append(label)
+        # yield the batch to the calling function
+        yield (np.array(data), np.array(labels))
 
 models = sys.argv[1]
 version = sys.argv[2]
@@ -111,11 +111,11 @@ else:
 le = pickle.loads(open('output/le_'+str(models)+'_'+str(version)+'.cpickle', "rb").read())
 # derive the paths to the training, validation, and testing CSV files
 trainPath = os.path.sep.join([config.BASE_CSV_PATH,
-	"{}.csv".format(config.TRAIN+str(models)+'_'+str(version))])
+    "{}.csv".format(config.TRAIN+str(models)+'_'+str(version))])
 valPath = os.path.sep.join([config.BASE_CSV_PATH,
-	"{}.csv".format(config.VAL+str(models)+'_'+str(version))])
+    "{}.csv".format(config.VAL+str(models)+'_'+str(version))])
 testPath = os.path.sep.join([config.BASE_CSV_PATH,
-	"{}.csv".format(config.TEST+str(models)+'_'+str(version))])
+    "{}.csv".format(config.TEST+str(models)+'_'+str(version))])
 # determine the total number of images in the training and validation
 # sets
 totalTrain = sum([1 for l in open(trainPath)])
@@ -127,11 +127,11 @@ totalTest = len(testLabels)
 
 # construct the training, validation, and testing generators
 trainGen = csv_feature_generator(trainPath, config.BATCH_SIZE,
-	len(config.CLASSES), mode="train")
+    len(config.CLASSES), mode="train")
 valGen = csv_feature_generator(valPath, config.BATCH_SIZE,
-	len(config.CLASSES), mode="eval")
+    len(config.CLASSES), mode="eval")
 testGen = csv_feature_generator(testPath, config.BATCH_SIZE,
-	len(config.CLASSES), mode="eval")
+    len(config.CLASSES), mode="eval")
 
 
 # define our simple neural network
@@ -142,13 +142,13 @@ model.add(Dense(len(config.CLASSES), activation="softmax"))
 # compile the model
 opt = SGD(lr=1e-3, momentum=0.9, decay=1e-3 / 25)
 model.compile(loss="categorical_crossentropy", optimizer=opt,
-	metrics=["accuracy"])
+    metrics=["accuracy"])
 
 
 # train the network
 print("[INFO] training simple network...")
 H = model.fit(x=trainGen, steps_per_epoch=totalTrain // config.BATCH_SIZE,
-	validation_data=valGen, validation_steps=totalVal // config.BATCH_SIZE,epochs=25)
+    validation_data=valGen, validation_steps=totalVal // config.BATCH_SIZE,epochs=25)
 
 
 
@@ -171,10 +171,10 @@ with open(hist_csv_file, mode='w') as f:
 # show a nicely formatted classification report
 print("[INFO] evaluating network...")
 predIdxs = model.predict(x=testGen,
-	steps=(totalTest //config.BATCH_SIZE) + 1)
+    steps=(totalTest //config.BATCH_SIZE) + 1)
 predIdxs = np.argmax(predIdxs, axis=1)
 print(classification_report(testLabels, predIdxs,
-	target_names=le.classes_))
+    target_names=le.classes_))
 
 #print(confusion_matrix())
 
