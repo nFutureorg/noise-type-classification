@@ -4,7 +4,7 @@ import os
 #ORIG_INPUT_DATASET = "Food-5K"
 # initialize the base path to the *new* directory that will contain
 # our images after computing the training and testing split
-BASE_PATH = "datasets"
+BASE_PATH = "dataset"
 # define the names of the training, testing, and validation
 # directories
 TRAIN = "train"
