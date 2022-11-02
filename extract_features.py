@@ -179,6 +179,6 @@ for split in (config.TRAIN, config.TEST, config.VAL):
     # close the CSV file
     csv.close()
 # serialize the label encoder to disk
-f = open('output/le_'+str(models)+'_'+str(version)+'.cpickle', "wb")
+f = open('outputs/le_'+str(models)+'_'+str(version)+'.cpickle', "wb")
 f.write(pickle.dumps(le))
 f.close()
