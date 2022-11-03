@@ -13,7 +13,7 @@ VAL = "validation"
 # initialize the list of class label names
 CLASSES = ["gaussian", "poisson","mixed"]
 # set the batch size
-BATCH_SIZE = 64
+BATCH_SIZE = 32
 # initialize the label encoder file path and the output directory to
 # where the extracted features (in CSV file format) will be stored
 LE_PATH = os.path.sep.join(["output", "le.cpickle"])
